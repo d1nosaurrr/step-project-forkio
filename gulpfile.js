@@ -3,7 +3,7 @@ const browserSync = require("browser-sync").create();
 const sass = require('gulp-sass')(require('sass'));
 const autoprefixer = require('gulp-autoprefixer');
 const minifyjs = require('gulp-js-minify');
-const image = require('gulp-imagemin');
+const imagemin = require('gulp-imagemin');
 const clean = require('gulp-clean');
 const cleanCSS = require('gulp-clean-css');
 const rename = require("gulp-rename");
@@ -50,9 +50,8 @@ const js = () => {
         .pipe(browserSync.stream());
 };
 const img = () => {
-    return src("./src/img/**/*")
-        .pipe(image())
-        // .pipe(imageMin())
+    return src("./src/img/**/*.+(png|jpg|gif|svg|json|ico|xml)")
+        .pipe(imagemin())
         .pipe(dest('./dist/img'))
         .pipe(browserSync.stream());
 };

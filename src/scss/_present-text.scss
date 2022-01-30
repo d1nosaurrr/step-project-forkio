@@ -1,0 +1,96 @@
+.present-text {
+  background: $-color-white-;
+  padding: 0 40px 70px;
+
+  .container {
+    max-width: 861px;
+    margin: 0 auto;
+  }
+}
+
+@include _1200px {
+  .main__present-text {
+    margin-top: 129px;
+  }
+  .present-text__title {
+    @include font-params(700, 54px, 54px, $-present-title-color-, center, uppercase);
+    margin-top: 0;
+    margin-bottom: 35px;
+  }
+  .present-text__description {
+    @include font-params(400, 21px, 32px, $-present-description-color-, center);
+    margin-bottom: 13px;
+  }
+}
+
+@include _768px {
+  .main__present-text {
+    margin-top: 158px;
+  }
+  .present-text {
+    .container {
+      max-width: 689px;
+    }
+  }
+  .present-text__title {
+    @include font-params(700, 42px, 42px, $-present-title-color-, center, uppercase);
+    margin-top: 0;
+    margin-bottom: 33px;
+  }
+  .present-text__description {
+    @include font-params(400, 21px, 32px, $-present-description-color-, center);
+    margin-bottom: 24px;
+  }
+}
+
+@include _320px {
+  .main__present-text {
+    margin-top: 80px;
+  }
+  .present-text__title {
+    @include font-params(700, 26px, 28px, $-present-title-color-, center, uppercase);
+    margin-top: 0;
+    margin-bottom: 33px;
+  }
+  .present-text__description {
+    @include font-params(400, 14px, 20px, $-present-description-color-, center);
+    margin-bottom: 24px;
+  }
+}
+
+
+.icons {
+  &__list {
+    justify-content: center;
+  }
+
+  &__item {
+    display: inline-block;
+    border: 1px solid $-present-item-border-color-;
+    border-radius: 6px;
+    padding: 6px 13px;
+    @include font-params(400, 12px, 20px, $-color-black-, left);
+
+    svg {
+      margin-right: 8px;
+      vertical-align: middle;
+    }
+
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+
+  &__number {
+    display: inline-block;
+    min-width: 20px;
+
+    padding: 0 6px;
+    margin-left: 2px;
+    @include font-params(400, 12px, 18px, $-color-black-, center);
+
+    background-color: $-present-number-background-color-;
+    border: 1px solid $-present-number-border-color-;
+    border-radius: 2em;
+  }
+}

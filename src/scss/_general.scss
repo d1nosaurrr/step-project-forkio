@@ -1,0 +1,19 @@
+.page__body {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+}
+
+.container {
+  max-width: 1115px;
+  margin: 0 auto;
+}
+
+.f-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.f-row {
+  display: flex;
+  flex-direction: row;
+}
