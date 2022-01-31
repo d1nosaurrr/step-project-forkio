@@ -1,9 +1,9 @@
 .present-text {
   background: $-color-white-;
-  padding: 0 40px 70px;
+  padding-bottom: 70px;
 
   .container {
-    max-width: 861px;
+    max-width: calc(100% - 520px);
     margin: 0 auto;
   }
 }
@@ -29,7 +29,7 @@
   }
   .present-text {
     .container {
-      max-width: 689px;
+      max-width: calc(100% - 80px)
     }
   }
   .present-text__title {
@@ -46,6 +46,11 @@
 @include _320px {
   .main__present-text {
     margin-top: 80px;
+  }
+  .present-text {
+    .container {
+      max-width: calc(100% - 44px)
+    }
   }
   .present-text__title {
     @include font-params(700, 26px, 28px, $-present-title-color-, center, uppercase);
