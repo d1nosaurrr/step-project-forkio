@@ -11,9 +11,10 @@ const minifyInline = require('gulp-minify-inline');
 const concat = require('gulp-concat');
 
 const cleanDist = () => {
-    return src('dist/', {read: false})
+    return src('dist/', {read: false, allowEmpty: true})
         .pipe(clean());
-}
+};
+
 const serv = () => {
     browserSync.init({
         server: {
