@@ -1,0 +1,136 @@
+.features {
+  background-color: $features-section-color-;
+  padding-top: 99px;
+  padding-bottom: 72px;
+  width: 100%;
+
+
+  & .container {
+    width: calc(100% - 153px);
+    justify-content: space-between;
+    position: relative;
+  }
+
+  &__list {
+    width: 40%;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      padding-bottom: 35px;
+    }
+
+    &:nth-child(2) {
+      .card__img {
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+    }
+
+    &:nth-child(3) {
+      .card__img {
+        margin-left: 25px;
+        margin-right: 25px;
+      }
+    }
+
+    &:nth-child(4) {
+      .card__img {
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+    }
+  }
+
+  &__title {
+    @include font-params(700, 48px, 50px, $-feature-title-color-, left);
+    width: 50%;
+    margin: 0;
+    padding: 0;
+    order: 2;
+
+    &:after {
+      content: ">";
+    }
+
+    &:before {
+      content: "<";
+    }
+  }
+
+  &__img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+.card {
+  align-items: center;
+  justify-content: space-between;
+
+  &__title {
+    @include font-params(400, 16px, 21px, $-card-title-color-, left);
+  }
+
+  &__description {
+    @include font-params(400, 14px, 21px, $-card-description-color-, left);
+  }
+
+  &__img {
+    padding-right: 25px;
+  }
+}
+
+@include _320px {
+  .features {
+    background-color: #fff;
+
+    & .container {
+      width: calc(100% - 50px);
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__title {
+      @include font-params(700, 32px, 38px, $-feature-title-color-, center);
+      width: 100%;
+      margin-bottom: 36px;
+      order: 1;
+    }
+
+    &__list {
+      order: 2;
+      width: 100%;
+    }
+
+    &__item {
+      &:not(:last-child) {
+        padding-bottom: 40px;
+      }
+    }
+
+    &__img {
+      right: 0;
+      bottom: 6px;
+    }
+  }
+
+  .card {
+    flex-direction: column;
+
+    &__title {
+      @include font-params(400, 16px, 16px, $-card-title-color-, center);
+    }
+
+    &__description {
+      @include font-params(400, 14px, 21px, $-card-description-color-, center);
+    }
+
+    .card-img {
+      margin: 0;
+    }
+
+  }
+}
+
