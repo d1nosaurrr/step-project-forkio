@@ -3,7 +3,7 @@
   padding-bottom: 70px;
 
   .container {
-    max-width: calc(100% - 520px);
+    width: calc(100% - 520px);
     margin: 0 auto;
   }
 }
@@ -29,7 +29,7 @@
   }
   .present-text {
     .container {
-      max-width: calc(100% - 80px)
+      width: calc(100% - 80px)
     }
   }
   .present-text__title {
@@ -41,6 +41,11 @@
     @include font-params(400, 21px, 32px, $-present-description-color-, center);
     margin-bottom: 24px;
   }
+  .icons {
+    &__list {
+      flex-wrap: wrap;
+    }
+  }
 }
 
 @include _320px {
@@ -49,7 +54,7 @@
   }
   .present-text {
     .container {
-      max-width: calc(100% - 44px)
+      width: calc(100% - 44px)
     }
   }
   .present-text__title {
@@ -60,6 +65,15 @@
   .present-text__description {
     @include font-params(400, 14px, 20px, $-present-description-color-, center);
     margin-bottom: 24px;
+  }
+  .icons {
+    &__list {
+      flex-wrap: wrap;
+    }
+
+    &:last-child {
+      margin-top: 10px;
+    }
   }
 }
 
