@@ -1,0 +1,175 @@
+.features {
+  background-color: $features-section-color-;
+  padding-top: 99px;
+  padding-bottom: 72px;
+  width: 100%;
+  position: relative;
+
+  & .container {
+    width: calc(100% - 153px);
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 90px;
+  }
+
+  &__list {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      padding-bottom: 35px;
+    }
+  }
+
+  &__title {
+
+    @include font-params(700, 48px, 50px, $-feature-title-color-, left);
+    margin: 0 0 19px 0;
+    padding: 0;
+    grid-column-start: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+
+    &:after {
+      content: ">";
+    }
+
+    &:before {
+      content: "<";
+    }
+  }
+
+  &__picture {
+    justify-self: end;
+
+    grid-column-start: 2;
+    grid-row-start: 2;
+    width: 700px;
+    height: 519px;
+  }
+
+}
+
+.card {
+  display: grid;
+  column-gap: 23px;
+  grid-template-columns: 110px 406px;
+  align-items: center;
+
+  &__title {
+    @include font-params(400, 16px, 21px, $-card-title-color-, left);
+  }
+
+  &__img {
+    justify-self: center;
+  }
+
+  &__description {
+    @include font-params(400, 14px, 21px, $-card-description-color-, left);
+  }
+}
+
+@include _1200px {
+
+}
+
+@include _768px {
+  .features {
+    & .container {
+      grid-template-columns: auto;
+      grid-template-rows: repeat(3, auto);
+      align-content: center;
+    }
+
+    &__title {
+      width: 100%;
+      margin-bottom: 50px;
+      text-align: center;
+
+      grid-column-start: 1;
+      grid-row-start: 1;
+      grid-row-end: 2;
+    }
+
+    &__list {
+      //width: 100%;
+      margin-bottom: 76px;
+      grid-row-start: 2;
+      grid-row-end: 3;
+    }
+
+    &__picture {
+      grid-column-start: 1;
+      grid-row-start: 3;
+      grid-row-end: 4;
+      position: relative;
+      right: 0;
+    }
+  }
+}
+
+@include _320px {
+  .features {
+    background-color: #fff;
+
+    & .container {
+      width: calc(100% - 50px);
+      align-items: center;
+      justify-content: center;
+      grid-template-rows: repeat(1, auto);
+      grid-template-columns: 270px;
+    }
+
+    &__title {
+      @include font-params(700, 32px, 38px, $-feature-title-color-, center);
+      width: 100%;
+      margin-bottom: 36px;
+      grid-column-start: 1;
+      grid-row-start: 1;
+      grid-row-end: 2;
+    }
+
+    &__list {
+      width: 100%;
+      grid-column-start: 1;
+      grid-row-start: 2;
+      grid-row-end: 3;
+    }
+
+    &__item {
+      &:not(:last-child) {
+        padding-bottom: 40px;
+      }
+    }
+
+    &__picture {
+      grid-column-start: 1;
+      grid-row-start: 3;
+      grid-row-end: 4;
+      //position: relative;
+      //right: 0;
+      //bottom: 6px;
+    }
+  }
+
+  .card {
+    grid-template-columns: repeat(1, 270px);
+
+    &__title {
+      @include font-params(400, 16px, 16px, $-card-title-color-, center);
+    }
+
+    &__description {
+      @include font-params(400, 14px, 21px, $-card-description-color-, center);
+    }
+
+    .card-img {
+      margin: 0;
+    }
+  }
+}
+

@@ -1,10 +1,13 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <meta charset="UTF-8">
     <link rel="apple-touch-icon" sizes="57x57" href="./dist/img/favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="./dist/img/favicon/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="./dist/img/favicon/apple-icon-72x72.png">
@@ -19,9 +22,6 @@
     <link rel="icon" type="image/png" sizes="96x96" href="./dist/img/favicon/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./dist/img/favicon/favicon-16x16.png">
     <link rel="manifest" href="./dist/img/favicon/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -91,9 +91,145 @@
             </ul>
         </div>
     </section>
-    <section class="main__features features"></section>
+    <section class="main__features features">
+        <div class="container">
+            <h2 class="features__title">Here is what you get</h2>
+            <ul class="features__list">
+                <li class="features__item">
+                    <figure class="features__card card">
+                        <img src="./dist/img/features/icon_1.png" alt="Features icon" class="card__img" width="111">
+                        <figcaption class="card__about">
+                            <h2 class="card__title">
+                                Creatred to Make The Web Better
+                            </h2>
+                            <p class="card__description">
+                                Aenean cursus imperdiet nisl id fermentum. Aliquam pharetra dui laoreet vulputate
+                                dignissim.
+                                Sed
+                                id
+                                metus id quam auctor molestie eget ut augue.
+                            </p>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li class="features__item">
+                    <figure class="features__card card">
+                        <img src="./dist/img/features/icon_2.png" alt="Features icon" class="card__img" width="90"
+                             height="80"/>
+                        <figcaption class="card__about">
+                            <h2 class="card__title">
+                                Incredibly Powerful Tool
+                            </h2>
+                            <p class="card__description">
+                                Maecenas eu dictum felis, a dignissim nibh. Mauris rhoncus felis odio, ut volutpat massa
+                                placerat ac. Curabitur dapibus iaculis mi gravida luctus. Aliquam erat volutpat.
+                            </p>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li class="features__item">
+                    <figure class="features__card card">
+                        <img src="./dist/img/features/icon_3.png" alt="Features icon" class="card__img" width="60">
+                        <figcaption class="card__about">
+                            <h2 class="card__title">
+                                Experimental Stuff
+                            </h2>
+                            <p class="card__description">
+                                Maecenas eu dictum felis, a dignissim nibh. Mauris rhoncus felis odio, ut volutpat massa
+                                placerat ac. Curabitur dapibus iaculis mi gravida luctus. Aliquam erat volutpat.
+                            </p>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li class="features__item">
+                    <figure class="features__card card">
+                        <img src="./dist/img/features/icon_4.png" alt="Features icon" class="card__img" width="71">
+                        <figcaption class="card__about">
+                            <h2 class="card__title">
+                                Creatred to Make The Web Better
+                            </h2>
+                            <p class="card__description">
+                                Maecenas eu dictum felis, a dignissim nibh. Mauris rhoncus felis odio, ut volutpat massa
+                                placerat ac. Curabitur dapibus iaculis mi gravida luctus. Aliquam erat volutpat.
+                            </p>
+                        </figcaption>
+                    </figure>
+                </li>
+            </ul>
+            <picture class="features__picture">
+                <source media="(max-width: 480px)" srcset="./dist/img/features/editor_m.png">
+                <img src="./dist/img/features/editor_l.png" class="features__img" alt="Editor">
+            </picture>
+        </div>
+    </section>
     <section class="main__testimonials testimonials"></section>
-    <section class="main__pricing pricing"></section>
+    <section class="main__pricing pricing">
+        <div class="container">
+            <h2 class="pricing__title">
+                Fork Subscription Pricing
+            </h2>
+            <ul class="pricing__list">
+                <li class="pricing__item tariff f-col">
+
+                    <h2 class="tariff__title">
+                        Student
+                    </h2>
+                    <div class="tariff__price">
+                        <span class="tariff__sign">$</span>
+                        29
+                        <p class="tariff__per-month">per month</p>
+                    </div>
+                    <p class="tariff__description">Personal License</p>
+                    <a href="" class="tariff__link btn">purchase</a>
+                </li>
+                <li class="pricing__item tariff f-col">
+                    <h2 class="tariff__title">
+                        professional
+                    </h2>
+                    <div class="tariff__price">
+                        <span class="tariff__sign">$</span>
+                        59
+                        <p class="tariff__per-month">per month</p>
+                    </div>
+                    <div class="tariff__description">
+                        <p>Professional License</p>
+                        <p>Email Support</p>
+                    </div>
+                    <a href="" class="tariff__link btn">purchase</a>
+                </li>
+                <li class="pricing__item tariff tariff--popular f-col">
+                    <h2 class="tariff__title">
+                        agency
+                    </h2>
+                    <div class="tariff__price">
+                        <span class="tariff__sign">$</span>
+                        99
+                        <p class="tariff__per-month">per month</p>
+                    </div>
+                    <p class="tariff__description">
+                        1-12 Team Members <br>
+                        Phone Support
+                    </p>
+                    <a href="" class="tariff__link btn">purchase</a>
+                </li>
+                <li class="pricing__item tariff f-col">
+                    <h2 class="tariff__title">
+                        enterprise
+                    </h2>
+                    <div class="tariff__price">
+                        <span class="tariff__sign">$</span>
+                        159
+                        <p class="tariff__per-month">per month</p>
+                    </div>
+                    <p class="tariff__description">
+                        Unlimited Team Members <br>
+                        24/ 7 Phone Support
+                    </p>
+                    <a href="" class="tariff__link btn">purchase</a>
+                </li>
+            </ul>
+        </div>
+    </section>
 </main>
 <script src="./dist/js/script.min.js"></script>
 </body>
