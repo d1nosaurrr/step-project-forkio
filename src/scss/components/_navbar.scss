@@ -1,5 +1,15 @@
 .navbar {
   & .container {
+
+    //  ---  temporary solution  ---   ///
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+    max-width: 1200px;
+    width: 100%;
+    //  ---  temporary solution  ---   ///
+
+
     display: flex;
     align-items: center;
     justify-content: space-between;
