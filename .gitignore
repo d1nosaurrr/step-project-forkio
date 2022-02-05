@@ -7,4 +7,8 @@ node_modules/
 .idea/
 *.iml
 */.idea/
+
+.git/
 */.git/
+
+/task.md
