@@ -9,3 +9,5 @@ dist/
 
 .git/
 */.git/
+
+/task.md
