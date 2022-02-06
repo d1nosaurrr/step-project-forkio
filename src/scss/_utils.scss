@@ -2,3 +2,7 @@
   text-decoration: none;
   color: inherit;
 }
+
+%section-title {
+  @include font-params(700, 48px, 50px, $-color-white-, center);
+}
