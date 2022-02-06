@@ -67,3 +67,4 @@ const watcher = (cb) => {
 
 exports.dev = parallel(serv, watcher, series(styles, js, img));
 exports.build = series(cleanDist, styles, js, img);
+exports.styles = styles;

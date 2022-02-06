@@ -1,6 +1,12 @@
 // **** general vars **** //
 $-color-white-: #FFFFFF;
 $-color-black-: #000000;
+$-color-gray-: #848E97;
+$-color-purple-accent-: #8D81AC;
+
+
+// **** navbar section vars **** //
+$-navbar-accent-color-: $-color-purple-accent-;
 
 // **** present section vars **** //
 $-present-title-color-: #635C73;
@@ -22,5 +28,5 @@ $-pricing-item-color-: rgba(255, 255, 255, 0.11);
 $-pricing-item-popular-title-color-: rgba(0, 0, 0, 0.06);
 $-pricing-item-popular-color-: rgba(70, 48, 72, 0.84);
 
-$-pricing-description-delimiter-color-: #8D81AC;
+$-pricing-description-delimiter-color-: $-color-purple-accent-;
 $-pricing-link-color-: rgba(255, 255, 255, 0.15);

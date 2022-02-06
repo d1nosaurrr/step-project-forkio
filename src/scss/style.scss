@@ -2,7 +2,10 @@
 @import "normilize";
 @import "vars";
 @import "mixins";
+@import "utils";
 @import "general";
 @import "present-text";
+@import "components/navbar";
+@import "components/header";
 @import "features";
 @import "pricing";

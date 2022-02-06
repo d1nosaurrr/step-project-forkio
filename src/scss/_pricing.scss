@@ -4,7 +4,7 @@
   padding-bottom: 123px;
 
   .container {
-    margin: 0 auto;
+    //margin: 0 auto;
   }
 
   &__title {
@@ -13,13 +13,17 @@
 
   &__list {
     display: grid;
+    justify-content: center;
   }
 
   &__item {
     width: 257px;
+    height: 457px;
     margin: 0 auto;
     background-color: $-pricing-item-color-;
     align-items: center;
+    align-self: center;
+
   }
 }
 
@@ -78,6 +82,8 @@
 
   &--popular {
     background-color: $-pricing-item-popular-color-;
+    width: 299px;
+    height: 560px;
 
     .tariff {
       &__title {
@@ -126,8 +132,8 @@
     }
 
     &__list {
-      grid-template-columns: repeat(4, 1fr);
-      gap: 15px;
+      grid-template-columns: 257px 257px 299px 257px;
+      column-gap: 15px;
     }
   }
 }
@@ -146,7 +152,7 @@
     }
 
     &__list {
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: 299px 257px;
       gap: 25px;
       padding-bottom: 18px;
     }
@@ -172,6 +178,9 @@
       align-items: center;
       padding-bottom: 18px;
     }
+  }
+  .tariff--popular{
+    width: 257px;
   }
 }
 
