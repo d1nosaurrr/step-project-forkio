@@ -1,0 +1,49 @@
+.header {
+  background: url("../img/header/header-background.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding-bottom: 459px;
+}
+
+.header__title {
+  margin-top: 80px;
+  margin-bottom: 19px;
+  font-family: Montserrat, sans-serif;
+  @include font-params(700, 82px, 100%, $-color-white-, center, inherit);
+}
+
+.header__slogan {
+  font-family: Lato, sans-serif;
+  @include font-params(400, 30px, 100%, $-color-purple-accent-, center, inherit);
+  text-align: center;
+  margin-bottom: 19px;
+}
+
+.header__under-slogan{
+  font-family: Montserrat, sans-serif;
+  @include font-params(400, 16px, 100%, $-color-gray-, center, uppercase);
+}
+
+.header__button{
+  @extend %reset-link-style;
+  position: absolute;
+  bottom: -31px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  padding: 23px 61px;
+  font-family: Montserrat, sans-serif;
+  @include font-params(700, 21px, 100%, $-color-white-, center, capitalize);
+  background-color: $-color-purple-accent-;
+  border-radius: 40px;
+}
+
+.header__under-button{
+  font-family: Montserrat, sans-serif;
+  @include font-params(400, 14px, 100%, $-color-purple-accent-, center, capitalize);
+  position: absolute;
+  bottom: -63px;
+  left: 50%;
+  transform: translateX(-50%);
+}
