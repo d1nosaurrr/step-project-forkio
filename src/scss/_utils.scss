@@ -5,4 +5,12 @@
 
 %section-title {
   @include font-params(700, 48px, 50px, $-color-white-, center);
+
+  @media(max-width: 992px) {
+    font-size: 42px;
+  }
+
+  @media(max-width: 480px) {
+    font-size: 36px;
+  }
 }
