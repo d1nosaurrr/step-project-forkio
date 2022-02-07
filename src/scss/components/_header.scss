@@ -11,6 +11,11 @@
   margin-bottom: 19px;
   font-family: Montserrat, sans-serif;
   @include font-params(700, 82px, 100%, $-color-white-, center, inherit);
+
+  @media(max-width: 992px) {
+    margin-top: 68px;
+    font-size: 72px;
+  }
 }
 
 .header__slogan {
@@ -18,14 +23,22 @@
   @include font-params(400, 30px, 100%, $-color-purple-accent-, center, inherit);
   text-align: center;
   margin-bottom: 19px;
+
+  @media(max-width: 992px) {
+    font-size: 24px;
+  }
 }
 
-.header__under-slogan{
+.header__under-slogan {
   font-family: Montserrat, sans-serif;
   @include font-params(400, 16px, 100%, $-color-gray-, center, uppercase);
+
+  @media(max-width: 992px) {
+    font-size: 14px;
+  }
 }
 
-.header__button{
+.header__button {
   @extend %reset-link-style;
   position: absolute;
   bottom: -31px;
@@ -40,17 +53,20 @@
   border-radius: 40px;
   white-space: nowrap;
 
-  &:hover{
+  &:hover {
     color: $-color-purple-accent-;
     background-color: $-color-white-;
   }
 }
 
-.header__under-button{
+.header__under-button {
   font-family: Montserrat, sans-serif;
   @include font-params(400, 14px, 100%, $-color-purple-accent-, center, capitalize);
   position: absolute;
   bottom: -63px;
+  @media(max-width: 992px) {
+    bottom: -62px;
+  }
   left: 50%;
   transform: translateX(-50%);
 }
