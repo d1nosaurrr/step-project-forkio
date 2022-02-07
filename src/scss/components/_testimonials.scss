@@ -9,10 +9,17 @@
   background-color: #4B3B4E;
   padding-top: 108px;
   padding-bottom: 20px;
+  @media(max-width: 992px) {
+    padding-top: 86px;
+  }
 
   &__title {
     margin: 0 auto 84px;
     @extend %section-title;
+
+    @media(max-width: 992px) {
+      margin-bottom: 88px;
+    }
   }
 
   &__underpartners {
@@ -60,6 +67,11 @@
     flex-direction: column;
     align-items: center;
     margin-bottom: 32px;
+
+    @media(max-width: 992px) {
+      width: 50%;
+      max-width: 354px;
+    }
   }
 
   &__img {
