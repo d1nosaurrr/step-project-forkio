@@ -13,9 +13,23 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @media(max-width: 992px) {
+      flex-wrap: wrap;
+    }
+  }
+
+  @media(max-width: 992px) {
+    background-color: #27262A;
   }
 }
 
+.navbar_logo {
+  @media(max-width: 992px) {
+    margin-left: 10px;
+    margin-top: 22px;
+  }
+}
 
 .logo {
   @extend %reset-link-style;
@@ -59,6 +73,11 @@
 
 .navbar__menu {
   margin-left: auto;
+
+  @media(max-width: 992px) {
+    order: 3;
+    margin: 0 auto;
+  }
 }
 
 .menu {
@@ -69,7 +88,11 @@
     font-family: Montserrat, sans-serif;
     padding: 41px 24px 40px 24px;
 
-    &:hover{
+    @media(max-width: 992px) {
+      padding: 21px 23px 18px 23px;
+    }
+
+    &:hover {
       color: $-color-white-;
     }
   }
@@ -99,6 +122,11 @@
   &:hover {
     color: $-color-purple-accent-;
     background-color: $-color-white-;
+  }
+
+  @media(max-width: 992px) {
+    margin-right: 10px;
+    margin-top: 24px;
   }
 }
 
