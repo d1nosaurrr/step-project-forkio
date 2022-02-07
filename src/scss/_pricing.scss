@@ -155,7 +155,6 @@
 
     &__list {
       grid-template-columns:  minmax(200px, 299px) minmax(200px, 257px);
-      //299px 257px;
       gap: 25px;
       padding-bottom: 18px;
     }
@@ -163,8 +162,10 @@
     &__item {
       &:first-child {
         max-width: 257px;
-      }
 
+        margin-left: auto;
+        margin-right: 0;
+      }
     }
   }
 }
