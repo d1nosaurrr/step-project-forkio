@@ -24,7 +24,7 @@
 
 ####Быков Никита:
 - Создание git-репозитория.
-- - Настройка `gulpfile.js`.
+- Настройка `gulpfile.js`.
 - Верстка секции `Revolutionary Editor`.
 - Верстка секции `Here is what you get`.
 - Верстка секции `Fork Subscription Pricing`.
