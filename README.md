@@ -17,8 +17,9 @@
 
 ####Санченко Игорь:
 - Настройка `gulpfile.js`.
-- Верстка шапки сайта с верхним меню (включая выпадающее меню при малом разрешении экрана).
-- Верстка секцию `People Are Talking About Fork`.
+- Верстка секции `Navbar`
+- Верстка секции `Header`
+- Верстка секции `People Are Talking About Fork`.
 
 ####Быков Никита:
 - Создание git-репозитория.
@@ -27,3 +28,4 @@
 - Верстка секции `Here is what you get`.
 - Верстка секции `Fork Subscription Pricing`.
 
+[Ссылка на макет (figma)](https://www.figma.com/file/9lLwBJciU4yjDZBSnqqXSS/Forkio?node-id=4%3A2)
