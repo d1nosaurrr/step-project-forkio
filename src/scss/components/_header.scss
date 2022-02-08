@@ -1,0 +1,91 @@
+.header {
+  background: url("../img/header/header-background.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding-bottom: 459px;
+}
+
+.header__title {
+  margin-top: 80px;
+  margin-bottom: 19px;
+  font-family: Montserrat, sans-serif;
+  @include font-params(700, 82px, 100%, $-color-white-, center, inherit);
+
+  @media(max-width: 992px) {
+    margin-top: 68px;
+    font-size: 72px;
+  }
+
+  @media(max-width: 480px) {
+    margin-top: 50px;
+    font-size: 48px;
+  }
+}
+
+.header__slogan {
+  font-family: Lato, sans-serif;
+  @include font-params(400, 30px, 100%, $-color-purple-accent-, center, inherit);
+  text-align: center;
+  margin-bottom: 19px;
+
+  @media(max-width: 992px) {
+    font-size: 24px;
+  }
+  @media(max-width: 480px) {
+    font-size: 18px;
+    line-height: 150%;
+    margin-bottom: 14px;
+  }
+}
+
+.header__under-slogan {
+  font-family: Montserrat, sans-serif;
+  @include font-params(400, 16px, 100%, $-color-gray-, center, uppercase);
+
+  @media(max-width: 992px) {
+    font-size: 14px;
+  }
+}
+
+.header__button {
+  @extend %reset-link-style;
+  position: absolute;
+  bottom: -31px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  padding: 21px 61px;
+  font-family: Montserrat, sans-serif;
+  @include font-params(700, 21px, 100%, $-color-white-, center, capitalize);
+  background-color: $-color-purple-accent-;
+  border: $-color-purple-accent- solid 2px;
+  border-radius: 40px;
+  white-space: nowrap;
+
+  @media(max-width: 480px) {
+    padding: 13px 29px;
+    font-size: 18px;
+    bottom: -24px;
+  }
+
+  &:hover {
+    color: $-color-purple-accent-;
+    background-color: $-color-white-;
+  }
+}
+
+.header__under-button {
+  font-family: Montserrat, sans-serif;
+  @include font-params(400, 14px, 100%, $-color-purple-accent-, center, capitalize);
+  position: absolute;
+  bottom: -63px;
+  @media(max-width: 992px) {
+    bottom: -62px;
+  }
+  @media(max-width: 480px) {
+    bottom: -56px;
+  }
+  left: 50%;
+  transform: translateX(-50%);
+}

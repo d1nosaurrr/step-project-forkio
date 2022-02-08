@@ -1,0 +1,26 @@
+@mixin font-params($weight,$size,$height,$color,$align, $transform:"") {
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $height;
+  color: $color;
+  text-align: $align;
+  text-transform: unquote($transform);
+}
+
+@mixin _1200px {
+  @media (min-width: 993px) {
+    @content;
+  }
+}
+
+@mixin _768px {
+  @media (min-width: 481px) and (max-width: 992px) {
+    @content;
+  }
+}
+
+@mixin _320px {
+  @media (min-width: 320px) and (max-width: 480px) {
+    @content;
+  }
+}

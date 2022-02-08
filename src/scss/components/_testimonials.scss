@@ -1,0 +1,109 @@
+.testimonials {
+  background-size: cover;
+  background-position: center;
+  background-image: linear-gradient(
+                  to bottom,
+                  rgba(0, 0, 0, 0),
+                  #4B3B4E
+  ), url("../img/testimonials/testimonials-background.png");
+  background-color: #4B3B4E;
+  padding-top: 108px;
+  padding-bottom: 20px;
+  @media(max-width: 992px) {
+    padding-top: 86px;
+  }
+  @media(max-width: 480px) {
+    padding-top: 57px;
+  }
+
+  &__title {
+    margin: 0 auto 84px;
+    @extend %section-title;
+
+    @media(max-width: 992px) {
+      margin-bottom: 88px;
+    }
+    @media(max-width: 480px) {
+      margin-bottom: 53px;
+    }
+  }
+
+  &__underpartners {
+    font-family: Lato, sans-serif;
+    @include font-params(400, 14px, 150%, #A291A5, center, inherit);
+    width: 75%;
+    max-width: 900px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+
+    &:after {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 85%;
+      height: 2px;
+      background-color: #645766;
+      bottom: -20px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  & .container {
+    //  ---  temporary solution  ---   ///
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+    max-width: 1200px;
+    width: 100%;
+    //  ---  temporary solution  ---   ///
+  }
+
+}
+
+.partners {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 86px;
+  justify-content: space-between;
+
+  @media(max-width: 992px) {
+    margin-bottom: 36px;
+  }
+  @media(max-width: 480px) {
+    margin-bottom: 5px;
+    justify-content: center;
+  }
+
+  &__item {
+    width: 33%;
+    max-width: 345px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 32px;
+
+    @media(max-width: 992px) {
+      width: 50%;
+      max-width: 354px;
+    }
+    @media(max-width: 480px) {
+      width: 100%;
+      max-width: 280px;
+    }
+  }
+
+  &__img {
+    height: 108px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__desc {
+    font-family: Lato, sans-serif;
+    @include font-params(400, 16px, 150%, $-color-white-, center, inherit);
+    font-style: italic;
+  }
+}

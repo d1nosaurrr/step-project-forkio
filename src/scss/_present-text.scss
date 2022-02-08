@@ -1,0 +1,125 @@
+.present-text {
+  background: $-color-white-;
+  padding-bottom: 70px;
+
+  .container {
+    margin: 0 auto;
+  }
+}
+
+.icons {
+  &__list {
+    justify-content: center;
+    font-size: 0;
+  }
+
+  &__item {
+    display: block;
+    //width: 118px;
+    border: 1px solid $-present-item-border-color-;
+    border-radius: 6px;
+    padding: 3px 12px;
+    @include font-params(400, 12px, 20px, $-color-black-, left);
+
+    svg {
+      margin-right: 8px;
+      vertical-align: middle;
+    }
+
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+
+  &__number {
+    display: inline-block;
+    min-width: 20px;
+
+    padding: 0 6px;
+    margin-left: 2px;
+    @include font-params(400, 12px, 18px, $-color-black-, center);
+
+    background-color: $-present-number-background-color-;
+    border: 1px solid $-present-number-border-color-;
+    border-radius: 2em;
+  }
+}
+
+@include _1200px {
+  .main__present-text {
+    margin-top: 129px;
+  }
+  .present-text {
+    .container {
+      width: calc(100% - 520px);
+    }
+  }
+  .present-text__title {
+    @include font-params(700, 54px, 54px, $-present-title-color-, center, uppercase);
+    margin-top: 0;
+    margin-bottom: 35px;
+  }
+  .present-text__description {
+    @include font-params(400, 21px, 32px, $-present-description-color-, center);
+    margin-bottom: 13px;
+  }
+}
+
+@include _768px {
+  .main__present-text {
+    margin-top: 158px;
+  }
+  .present-text {
+    .container {
+      width: calc(100% - 80px)
+    }
+  }
+  .present-text__title {
+    @include font-params(700, 42px, 42px, $-present-title-color-, center, uppercase);
+    margin-top: 0;
+    margin-bottom: 33px;
+  }
+  .present-text__description {
+    @include font-params(400, 21px, 32px, $-present-description-color-, center);
+    margin-bottom: 24px;
+  }
+  .icons {
+    &__list {
+      flex-wrap: wrap;
+    }
+  }
+}
+
+@include _320px {
+  .main__present-text {
+    margin-top: 80px;
+  }
+  .present-text {
+    .container {
+      width: calc(100% - 44px)
+    }
+  }
+  .present-text__title {
+    @include font-params(700, 26px, 28px, $-present-title-color-, center, uppercase);
+    margin-top: 0;
+    margin-bottom: 33px;
+  }
+  .present-text__description {
+    @include font-params(400, 14px, 20px, $-present-description-color-, center);
+    margin-bottom: 24px;
+  }
+  .icons {
+    &__list {
+      flex-wrap: wrap;
+    }
+
+    &__number {
+      display: none;
+    }
+
+    &:last-child {
+      margin-top: 10px;
+    }
+  }
+}
+

@@ -1,5 +1,3 @@
-# step-project-forkio
-
 ###Над проектом работали студенты группы fe-6:
 Санченко Игорь и Быков Никита.
 
@@ -28,3 +26,4 @@
 - Верстка секции `Revolutionary Editor`.
 - Верстка секции `Here is what you get`.
 - Верстка секции `Fork Subscription Pricing`.
+
