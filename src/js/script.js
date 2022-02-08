@@ -21,7 +21,7 @@ document.addEventListener("click", (e) => {
     if (e.target === menuExtender || e.target.parentElement === menuExtender) {
         changeMenuStatus(isMenuExtended);
         isMenuExtended = !isMenuExtended;
-    } else if (isMenuExtended) {
+    } else if (e.target !== menuBlock && e.target.parentElement !== menuBlock && e.target.parentElement.parentElement !== menuBlock && isMenuExtended) {
         changeMenuStatus(isMenuExtended);
         isMenuExtended = !isMenuExtended;
     }
