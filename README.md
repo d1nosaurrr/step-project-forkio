@@ -28,5 +28,7 @@
 - Верстка секции `Here is what you get`.
 - Верстка секции `Fork Subscription Pricing`.
 
+
 [Ссылка на макет (figma)](https://www.figma.com/file/9lLwBJciU4yjDZBSnqqXSS/Forkio?node-id=4%3A2)
+
 [Ссылка на результат](https://d1nosaurrr.github.io/step-project-forkio/)
